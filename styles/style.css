@@ -1,0 +1,92 @@
+body {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    font-family: Arial, sans-serif;
+}
+header, main, footer {
+    padding: 20px;
+    margin: 10px;
+}
+header {
+    background-color: #f8f9fa;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 160px;
+    height: 70px;
+}
+.ava{
+    width: 40px;
+    height: 40px;
+
+}
+.head2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa; /* Warna latar belakang */
+    padding: 20px; /* Jarak antara konten dan batas elemen */
+    border-radius: 10px; /* Melengkungkan sudut elemen */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+
+}
+.name {
+    color: #a63535; /* Warna teks */
+    font-size: 20px; /* Ukuran teks */
+    font-weight: bold; /* Ketebalan teks */
+    text-align: center; /* Posisi teks */
+    font-family: "Bauhaus 93", ui-sans-serif;
+}
+
+.list {
+    display: flex;
+    background-color: #f8f9fa;
+    font-family: "Bauhaus 93", ui-sans-serif;
+}
+.daftargame1 {
+    background-color: #ff0000; /* Warna latar belakang */
+    padding: 25px; /* Jarak antara konten dan batas elemen */
+    border-radius: 10px; /* Melengkungkan sudut elemen */
+    box-shadow: 0 2px 8px rgba(122, 99, 99, 0.2); /* Menambahkan bayangan */
+    margin: 10px;
+
+
+}
+.daftargame2 {
+    background-color: #f8f9fa; /* Warna latar belakang */
+    padding: 25px; /* Jarak antara konten dan batas elemen */
+    border-radius: 10px; /* Melengkungkan sudut elemen */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    margin: 10px;
+}
+.daftargame3 {
+    background-color: #ac7e2e; /* Warna latar belakang */
+    padding: 25px; /* Jarak antara konten dan batas elemen */
+    border-radius: 10px; /* Melengkungkan sudut elemen */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    margin: 10px;
+
+}
+a{
+    color: black;
+}
+/*BATAS HEADER*/
+
+/*BATAS MAIN*/
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+}
