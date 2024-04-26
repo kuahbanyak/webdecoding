@@ -1,92 +1,90 @@
-body {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    font-family: Arial, sans-serif;
+#combineMenu * {
+    font-family: "Font Awesome 5 Free", "NotoKr", "Helvetica Neue", "Noto Sans SC",
+      "Malgun Gothic", Apple SD Gothic Neo, "애플 SD 산돌고딕 Neo", "M PLUS 1p",
+      sans-serif !important;
+    word-break: normal !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+body{
+    width: auto;
+    margin: 0;
 }
-header, main, footer {
-    padding: 20px;
-    margin: 10px;
-}
-header {
-    background-color: #f8f9fa;
-}
-.head {
-    display: flex;
-    justify-content: space-between;
-}
-.logo {
-    width: 160px;
-    height: 70px;
-}
-.ava{
-    width: 40px;
-    height: 40px;
-
-}
-.head2 {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f8f9fa; /* Warna latar belakang */
-    padding: 20px; /* Jarak antara konten dan batas elemen */
-    border-radius: 10px; /* Melengkungkan sudut elemen */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
-
-}
-.name {
-    color: #a63535; /* Warna teks */
-    font-size: 20px; /* Ukuran teks */
-    font-weight: bold; /* Ketebalan teks */
-    text-align: center; /* Posisi teks */
-    font-family: "Bauhaus 93", ui-sans-serif;
-}
-
-.list {
-    display: flex;
-    background-color: #f8f9fa;
-    font-family: "Bauhaus 93", ui-sans-serif;
-}
-.daftargame1 {
-    background-color: #ff0000; /* Warna latar belakang */
-    padding: 25px; /* Jarak antara konten dan batas elemen */
-    border-radius: 10px; /* Melengkungkan sudut elemen */
-    box-shadow: 0 2px 8px rgba(122, 99, 99, 0.2); /* Menambahkan bayangan */
-    margin: 10px;
-
-
-}
-.daftargame2 {
-    background-color: #f8f9fa; /* Warna latar belakang */
-    padding: 25px; /* Jarak antara konten dan batas elemen */
-    border-radius: 10px; /* Melengkungkan sudut elemen */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
-    margin: 10px;
-}
-.daftargame3 {
-    background-color: #ac7e2e; /* Warna latar belakang */
-    padding: 25px; /* Jarak antara konten dan batas elemen */
-    border-radius: 10px; /* Melengkungkan sudut elemen */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
-    margin: 10px;
-
-}
-a{
-    color: black;
-}
-/*BATAS HEADER*/
-
-/*BATAS MAIN*/
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #f8f9fa;
-}
-
-footer {
-    background-color: #f8f9fa;
-}
-@media (max-width: 600px) {
+#combineMenu
+{
+        background-color: #131313 !important;
+        clear: both;
+        font: 1em sans-serif;;
+        height: 60px;
+        position: fixed;
+        text-align: left;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    
+        
+    .clearfix:after, .clearfix:before {
+        content: "";
+        display: table;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+    .wrap-cbm {
+        z-index: 9999;
+        box-sizing: border-box;
+        width: 100%;
+        height: inherit;
+        padding: 0;
+        line-height: 57px;
+    }
+    .cb-menu{
+        padding-left: 22px;
+        position: relative;
+    }
+    .cbm-logo{
+        background: url(../assets/images/gwarnet.png) no-repeat;
+        background-size: 110px auto;
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        width: 110px;
+    }
+    .wrap-cbm > fieldset{
+        align-items: center;
+        display: flex;
+        float: right;
+        height: inherit;
+    }
+    .l-area {
+        margin-right: 22px;
+      }
+    .l-area > li {
+        float: left;
+        width: auto;
+        margin-left: 12px;
+        margin-left: 0;
+        font-size: 12px;
+        line-height: 57px;
+      }
+    /*BATAS HEADER*/
+    
+    /*BATAS MAIN*/
     main {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #f8f9fa;
+    }
+    
+    footer {
+        background-color: #f8f9fa;
+    }
+    
+    @media (max-width: 600px) {
+        main {
+            flex-direction: column;
+        }
     }
 }
